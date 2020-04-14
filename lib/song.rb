@@ -33,6 +33,7 @@ class Song
      if genre == gcount
        count += 1 
     end
+  end
     genre_count
   end
   
@@ -42,6 +43,7 @@ class Song
       if artist == acount
       count += 1 
     end
+  end
     artist_count
   end
 
