@@ -1,5 +1,5 @@
 class Song 
-  attr_accessor :name, :artists, :genres
+  attr_accessor :name, :artist, :genre
   
   @@count = 0 
   @@artists = []
@@ -8,11 +8,11 @@ class Song
   @@artist_count = {}
   
   
-  def initialize(name, artists, genres)
+  def initialize(name, artist, genre)
     @@count
     @name = name
-    @artists = artists
-    @genre = genres
+    @artists = artist
+    @genre = genre
     @@count += 1 
     @@artists << artists 
     @@genres << genres
