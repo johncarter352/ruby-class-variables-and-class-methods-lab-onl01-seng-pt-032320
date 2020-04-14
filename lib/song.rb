@@ -34,6 +34,10 @@ class Song
     end
     genre_count
   end
+  
+  def self.artist_count
+    artist_count = hash.new(0)
+    if @@artist.each do 
 end
 end
     
