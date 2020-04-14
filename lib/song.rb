@@ -48,4 +48,9 @@ class Song
 def self.genre_count
 Hash[@@genres.collect { |gcount| [gcount, gcount(gcount)] }]
   end
+  
+def self.genre_count
+Hash[@@artists.collect { |acount| [acount, acount(acount)] }]
+  end
+end
     
