@@ -29,17 +29,18 @@ class Song
   
   def self.gcount(gcount)
   count = 0 
-    @@genre.each do |gcount|
-     if  
+    @@genre.each do |genre|
+     if genre == gcount
        count += 1 
     end
     genre_count
   end
   
-  def self.artist_count
-    @@artist_count = Hash.new(0)
-    if @@artist_count.each do |artist|
-      artist_count[artist] += 1 
+  def self.acount(acount)
+  count = 0 
+    @@artists.each do |artist|
+      if artist == acount
+      count += 1 
     end
     artist_count
   end
