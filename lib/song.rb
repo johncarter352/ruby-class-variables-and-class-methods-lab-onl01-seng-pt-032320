@@ -29,7 +29,7 @@ class Song
   
   def self.gcount(gcount)
     count = 0 
-    if @@genre_count.each do |genre|
+    if @@genre_count.each do |gcount|
       genre_count[genre] += 1 
     end
     genre_count
