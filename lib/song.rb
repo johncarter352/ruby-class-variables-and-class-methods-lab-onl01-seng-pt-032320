@@ -14,4 +14,6 @@ class Song
     @@artist << artist 
     @@genre << genre
   end
+  
+  def
     
