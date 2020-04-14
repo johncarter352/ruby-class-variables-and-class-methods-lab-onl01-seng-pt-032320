@@ -27,7 +27,7 @@ class Song
     @@artists.uniq
   end
   
-  def self.gcount
+  def self.gcount(gcount)
     count = 0 
     if @@genre_count.each do |genre|
       genre_count[genre] += 1 
