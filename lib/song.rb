@@ -27,7 +27,7 @@ class Song
     @@artists.uniq
   end
   
-  def self.g_count(gcount)
+  def self.gcount(gcount)
   count = 0 
     @@genre.each do |genre|
      if genre == gcount
@@ -36,7 +36,7 @@ class Song
     genre_count
   end
   
-  def self.a_count(acount)
+  def self.acount(acount)
   count = 0 
     @@artists.each do |artist|
       if artist == acount
@@ -46,6 +46,6 @@ class Song
   end
 
 def self.genre_count
-Hash[@@genres.collect { |gcount| [, ()] }]
+Hash[@@genres.collect { |gcount| [gcount, gcount(gcount)] }]
   end
     
