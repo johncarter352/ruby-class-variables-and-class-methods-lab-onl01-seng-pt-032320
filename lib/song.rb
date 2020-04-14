@@ -55,5 +55,4 @@ def self.genre_count
 Hash[@@artists.collect { |acount| [acount, acount(acount)] }]
   end
 end
-end
     
